@@ -11,6 +11,9 @@ export default function Form() {
             body: JSON.stringify({nome, idade})
         })
 
+        setNome("")
+        setIdade(0)
+
         const resp = await fetch('/api/form')
         const usuarios = await resp.json()
         setUsuarios(usuarios)
