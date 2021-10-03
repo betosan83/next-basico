@@ -1,8 +1,7 @@
 import { useRouter } from "next/router";
 import Link from 'next/link'
 
-export default function params() {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
+export default function Params() {
     const router = useRouter()
     const id = router.query.id
     const nome = router.query.nome
